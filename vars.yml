@@ -18,7 +18,7 @@
 
 - name  : demo on file level
   hosts : all
-  vars_file :
+  vars_files :
     - files.yml
   tasks :
     - name : print
