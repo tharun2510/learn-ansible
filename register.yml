@@ -1,0 +1,9 @@
+- name : o/p of shell command given to varaible by register
+  hosts : all
+  tasks :
+    - name :  register
+      ansible.builtin.shell  : uptime
+      register : output
+    - name : output
+      ansible.builtin.debug :
+        msg : "{{output}}"
