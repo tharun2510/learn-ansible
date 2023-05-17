@@ -16,3 +16,12 @@
       ansible.builtin.debug :
         msg : "{{input}}"
 
+- name  : demo on file level
+  hosts : all
+  vars_file :
+    - files.yml
+  tasks :
+    - name : print
+      ansible.builtin.debug :
+        msg : "{{input}}"
+
