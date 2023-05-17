@@ -25,3 +25,8 @@
       ansible.builtin.debug :
         msg : "{{input}}"
 
+- name : role level
+  hosts : all
+  roles :
+    - sample
+
