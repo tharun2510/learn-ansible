@@ -7,3 +7,12 @@
       ansible.builtin.debug :
         msg : url - {{input}}
 
+- name : demo on task level variables
+  hosts : all
+  tasks :
+    - name : print url
+      vars :
+        input : task level
+      ansible.builtin.debug :
+        msg : "{{input}}"
+
