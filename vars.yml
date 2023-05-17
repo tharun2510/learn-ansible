@@ -1,0 +1,9 @@
+- name : demo on play level variables
+  hosts : all
+  vars :
+    input : play level
+  tasks :
+    - name : print url
+      ansible.builtin.debug :
+        msg : url - {{input}}
+
