@@ -2,5 +2,5 @@
   hosts : all
   tasks :
     - name : ssm
-      ansible:builtin:debug :
+      ansible.builtin.debug :
         msg : value-{{lookup('aws_ssm' , 'test.test' , region='us-east-1')}}
